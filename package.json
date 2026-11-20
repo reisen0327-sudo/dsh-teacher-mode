@@ -1,0 +1,55 @@
+{
+  "name": "dsh-teacher-mode",
+  "version": "0.1.0",
+  "description": "Teacher mode for DeepSeek Harness: a selectable agent preset that interviews the learner for goals and materials, then teaches, writes class notes, and quizzes.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "reisen0327-sudo",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "education",
+    "teaching",
+    "tutor",
+    "agent-preset"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reisen0327-sudo/dsh-teacher-mode.git"
+  },
+  "homepage": "https://github.com/reisen0327-sudo/dsh-teacher-mode#readme",
+  "bugs": {
+    "url": "https://github.com/reisen0327-sudo/dsh-teacher-mode/issues"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-user-questions": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
