@@ -2,6 +2,8 @@
 
 中文 | [English](README.en.md)
 
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/reisen0327-sudo/dsh-teacher-mode)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）加一个**教学模式**预设：新建会话时选择「教学模式」，DSH 会先弹窗问你「想学什么、为什么学、手上有哪些参考资料、什么水平、什么时候考」，再按这些答案调整讲解深度、例题难度和测验形式，真的把一门课教下去。
 
 它不是一个提示词模板，而是一个标准 DSH 组合包（bundle）：
